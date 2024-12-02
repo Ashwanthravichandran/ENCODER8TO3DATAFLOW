@@ -39,17 +39,36 @@ Figure 02  Encoder 8 * 3
 /* write all the steps invloved */
 
 **PROGRAM**
+```
+module exp5(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= ( y4 | y5 | y6 | y7);
+assign b= ( y2 | y3 | y6 | y7);
+assign c= ( y1 | y3 | y5 | y7);
+endmodule
+
+```
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+Developed by:R ASHWANTH RegisterNumber:24900175
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+
+![Screenshot 2024-12-02 132133](https://github.com/user-attachments/assets/6a434d65-d800-4656-a60d-392cf75a3b4d)
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
+
+![Screenshot (14)](https://github.com/user-attachments/assets/9a276953-1ecd-4fcc-870f-9f2cdcd45a42)
+
 **RESULTS**
+
+
+Thus the full adder and subtractor circuits are designed and the truth table is verified using Quartus softwate.
 
 
 
